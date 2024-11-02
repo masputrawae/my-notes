@@ -2,7 +2,7 @@
     {% if site.github.repository_url %}
         {% if site.disable_edit != true %}
             <span class="tools-element">
-                <a target="_blank" href="{{ site.github.repository_url }}/new/{{ site.git_branch | escape }}{{ site.site_root | default: '/' }}_posts?filename="><i class="fa-solid fa-plus"></i> Add new</a>
+                <a href="{{ '/text-editor.html' | relative_url }}"><i class="fa-solid fa-plus"></i> Add new</a>
             </span>
             <span class="tools-element">
                 <a target="_blank" href="{{ site.github.repository_url }}/edit/{{ site.git_branch | escape }}{{ site.site_root | default: '/' }}_posts/{{ page.path | remove: '_posts/' | escape }}"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
