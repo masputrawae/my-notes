@@ -3,6 +3,7 @@ layout: page
 title: Text Editor
 permalink: /text-editor.html
 ---
+
 <div class="markdown-editor">
     <label for="title">Judul:</label><br>
     <input type="text" id="title" class="editor-input" placeholder="Masukkan judul" required><br>
@@ -62,13 +63,15 @@ permalink: /text-editor.html
             const author = document.getElementById('author').value;
             const last_modified_at = document.getElementById('last_modified_at').value;
             const markdownText = document.getElementById('markdown').value;
-    
-            // Menggunakan Liquid untuk mendapatkan tanggal dalam format YYYY-MM-DD
-            const defaultDate = "{{ page.date | date: '%Y-%m-%d' }}"; // Ini akan menghasilkan tanggal
-    
-            // Menggunakan prompt untuk memasukkan nama file
-            const fileName = prompt("Masukkan nama file (misal: " + defaultDate + "-my-post.md):", defaultDate + "-");
-    
+
+            const defaultDate = "{{ page.date | date: '%Y-%m-%d' }}";
+            let fileName = prompt("Masukkan nama file (misal: " + defaultDate + "-my-post.md):", defaultDate + "-");
+
+            fileName = fileName.trim().replace(/\s+/g, '-');
+            if (!fileName.endsWith(".md")) {
+                fileName += ".md";
+            }
+
             if (fileName) {
                 const frontMatter = `---\n` +
                     `layout: post\n` +
@@ -86,20 +89,15 @@ permalink: /text-editor.html
                     `author: ${author}\n` +
                     `last_modified_at: ${last_modified_at}\n` +
                     `---\n`;
-    
+
                 const fullText = frontMatter + markdownText;
-    
-                // Ganti dengan username GitHub Anda
-                const GITHUB_USERNAME = 'masputrawae'; // Username GitHub kamu
-                // Ganti dengan nama repositori Anda
-                const GITHUB_REPO = 'my-notes'; // Nama repositori kamu
-                // Path direktori di mana file akan disimpan
-                const GITHUB_PATH = '_posts'; // Path direktori
-    
-                // Membuat URL untuk halaman pembuatan file di GitHub
-                const githubUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO}/new/master/${GITHUB_PATH}/${fileName}?value=${encodeURIComponent(fullText)}`;
-    
-                // Mengarahkan pengguna ke URL
+
+                const GITHUB_USERNAME = 'masputrawae';
+                const GITHUB_REPO = 'my-notes';
+                const GITHUB_PATH = '_posts';
+
+                const githubUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO}/new/master/${GITHUB_PATH}?filename=${encodeURIComponent(fileName)}&value=${encodeURIComponent(fullText)}`;
+
                 window.open(githubUrl, '_blank');
             } else {
                 alert('Nama file tidak boleh kosong!');
