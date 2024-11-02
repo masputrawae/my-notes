@@ -7,6 +7,9 @@ layout: main
   <div id="rendered-content">
     {% include action.html %}
       {{ content }}
+    <p class="post-meta">
+        Diposting pada {{ page.date | date: '%B %d, %Y' }} oleh <span class="author">{{ page.author }}</span>
+    </p>
   </div>
 
   <!-- Markdown Source (Tersembunyi secara default) -->
