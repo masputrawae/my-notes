@@ -14,12 +14,14 @@
 }
 
 .hero {
-  h1 {font-size: v.$font__size--8xl!important;}
   text-align: center;
   border-bottom: 1px solid var(--border-first);
+
+  h1 {font-size: v.$font__size--8xl!important;}
 }
 .post-meta {
   display: none;
+  font-size: v.$font__size--xs;
   @include m.min(md){
     @include m.flex-center;
     gap: 1rem;
