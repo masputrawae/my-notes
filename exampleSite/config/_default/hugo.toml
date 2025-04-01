@@ -2,6 +2,7 @@
 #=========== BASE SETTING ===========#
 title       = "My Notes"
 baseURL     = "https://your-domain/"
+theme       = "my-notes-theme"
 
 enableEmoji  = true
 capitalizeListTitles = false
@@ -12,7 +13,7 @@ disableDefaultLanguageRedirect = false
 [privacy]
   [privacy.googleAnalytics]
     disable = true
-    respectDoNotTrack = false
+    respectDoNotTrack = true
 #====================================#
 #======== TAXONOMIES SETTING ========#
 [taxonomies]
