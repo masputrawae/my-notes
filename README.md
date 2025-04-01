@@ -2,7 +2,7 @@
 
 ## 🌟 **Overview**  
 A versatile Hugo theme for **blogs, portfolios, technical documentation, and personal notes**. Suitable for writers, developers, students, and non-business users.  
-**Demo**: [Demo Link](https://github.com/masputrawae/my-notes-demo) | **Repo**: [GitHub](https://github.com/masputrawae/my-notes)  
+**Demo**: [Demo Link](https://github.com/wumbojb/my-notes-demo) | **Repo**: [GitHub](https://github.com/masputrawae/my-notes)  
 
 ---  
 
