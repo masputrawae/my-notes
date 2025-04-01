@@ -47,7 +47,7 @@ Main config files in `config/_default/`:
 
 ## 🛠 **Optimization & Support**  
 - **Browsers**: Latest Chrome, Firefox, Safari, Edge.  
-- **Bug Reports**: Open an [issue on GitHub](https://github.com/your-repo/issues).  
+- **Bug Reports**: Open an [issue on GitHub](https://github.com/masputrawae/my-notes/issues/new).  
 - **Tips**:  
   - Use `.webp` images for better performance.  
   - Limit complex shortcodes on static pages.  
@@ -55,7 +55,7 @@ Main config files in `config/_default/`:
 ---  
 
 ## 📜 **License**  
-This theme is licensed under [MIT License](LICENSE). Free to modify and use commercially.  
+This theme is licensed under [MIT License](https://github.com/masputrawae/my-notes?tab=MIT-1-ov-file). Free to modify and use commercially.  
 
 ---  
 
@@ -66,6 +66,7 @@ This theme is licensed under [MIT License](LICENSE). Free to modify and use comm
 
 ---  
 
-**Note**: For advanced CSS/JS customization, familiarity with [Hugo Modules](https://gohugo.io/hugo-modules/) or forking this theme is recommended.  
+> [!NOTE] Note
+> For advanced CSS/JS customization, familiarity with [Hugo Modules](https://gohugo.io/hugo-modules/) or forking this theme is recommended.  
 
 ---
