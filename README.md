@@ -66,7 +66,7 @@ This theme is licensed under [MIT License](https://github.com/masputrawae/my-not
 
 ---  
 
-> [!NOTE] Note
+> Note
 > For advanced CSS/JS customization, familiarity with [Hugo Modules](https://gohugo.io/hugo-modules/) or forking this theme is recommended.  
 
 ---
