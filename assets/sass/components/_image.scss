@@ -1,0 +1,65 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+//========================== IMAGE FLOAT
+.image {
+  margin: 1rem 0;
+  position: relative;
+  &--full img {
+    width: 100%;
+    display: block;
+  }
+
+  &--center {
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  &--left,
+  &--right {
+    float: left;
+    margin-right: 1rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include m.max(sm) {
+      float: none;
+    }
+  }
+
+  &--right {
+    float: right;
+    margin-left: 1rem;
+    margin-right: 0;
+
+    @include m.max(sm) {
+      float: none;
+    }
+  }
+
+  &__caption {
+    max-width: 100%;
+    font-size: 0.9rem;
+    color: var(--text-third);
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
