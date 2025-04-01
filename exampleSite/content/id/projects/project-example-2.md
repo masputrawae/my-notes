@@ -11,9 +11,9 @@ categories:
   - Projects
 status:
   - ✅ Success
-pinned: false
+pinned: true
 mathjax: false
-draft: true
+draft: false
 ---
 ## 💼 Hello Projects
 Ipsum consectetur nostrud dolore amet esse non eiusmod ipsum amet. Eu exercitation aute incididunt do. Veniam irure ullamco sit culpa Lorem velit enim et laborum consectetur. Ut dolor dolore nostrud duis minim amet magna aute adipisicing pariatur ea.

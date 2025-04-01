@@ -11,9 +11,9 @@ categories:
   - Blog
 series:
   - Example
-pinned: false
+pinned: true
 mathjax: false
-draft: true
+draft: false
 ---
 
 ## 📚 Hello Article 

@@ -18,9 +18,9 @@ grouping:
   - "❔ Questions and Answers"
   - "🚨 Urgent"
   - "⏱️ Temporary"
-pinned: false
+pinned: true
 mathjax: false 
-draft: true
+draft: false
 ---
 
 ## ✍️ Hello Notes

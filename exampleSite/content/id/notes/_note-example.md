@@ -20,7 +20,7 @@ grouping:
   - "⏱️ Temporary"
 pinned: false
 mathjax: false 
-draft: true
+draft: false
 ---
 
 ## ✍️ Hello Notes
