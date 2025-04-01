@@ -1,0 +1,31 @@
+{{ with .Params.image | default "https://placehold.co/1080x560" }}
+  <figure class="image image--center">
+    <img src="{{ . }}" alt="{{ $.Title }}">
+  </figure>
+{{ end }}
+
+<small class="post-meta">
+  {{ with .Date }}
+    <span>
+      <strong><i class="bi bi-calendar"></i> {{ i18n "publish" }}: </strong>
+      <time datetime="{{ . | dateFormat "2006-01-02T15:04:05Z07:00" }}">{{ . | dateFormat site.Params.dateFormat }}</time>
+    </span>
+  {{ end }}
+
+  <span>
+    <strong><i class="bi bi-stopwatch"></i> {{ i18n "reading_time" }}: </strong>
+    {{ .ReadingTime }} min
+  </span>
+
+  {{ with .Params.last_modified }}
+    <span>
+      <strong><i class="bi bi-clock-history"></i> {{ i18n "last_modified" }}: </strong>
+      <time datetime="{{ . | dateFormat "2006-01-02T15:04:05Z07:00" }}">{{ . | dateFormat site.Params.dateFormat }}</time>
+    </span>
+  {{ else }}
+    <span>
+      <strong><i class="bi bi-clock-history"></i> {{ i18n "last_modified" }}: </strong>
+      <time datetime="{{ .Lastmod | dateFormat "2006-01-02T15:04:05Z07:00" }}">{{ .Lastmod | dateFormat site.Params.dateFormat }}</time>
+    </span>
+  {{ end }}
+</small>

@@ -1,0 +1,10 @@
+<header class="u-container header header--mobile">
+  {{ partial "layouts/breadcrumb.html" . }}
+  <button class="btn btn--icon" data-toggle-offcanvas="leftOffcanvas" title="{{ i18n "sidebar_left_open" }}" aria-label="{{ i18n "sidebar_left_open" }}">
+    <i class="bi bi-list"></i>
+  </button>
+  <a class="header__title" href="{{ site.BaseURL | absURL }}">{{ site.Title }}</a>
+  <button class="btn btn--icon" data-toggle-offcanvas="rightOffcanvas" title="{{ i18n "sidebar_right_open" }}" aria-label="{{ i18n "sidebar_right_open" }}">
+    <i class="bi bi-book"></i>
+  </button>
+</header>

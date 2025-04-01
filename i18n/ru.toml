@@ -1,0 +1,89 @@
+[publish]
+other = "Опубликовать"
+
+[last_modified]
+other = "Последнее изменение"
+
+[pinned]
+other = "Закреплено"
+
+[recent_post]
+other = "Последние записи"
+
+[related_content]
+other = "Похожие материалы"
+
+[no_related_content]
+other = "Похожих материалов не найдено"
+
+[top_five]
+other = "Топ 5 в"
+
+[toc]
+other = "Содержание"
+
+[reading_time]
+other = "Время чтения"
+
+[see_next]
+other = "Далее"
+
+[see_previous]
+other = "Назад"
+
+[result]
+other = "Результат"
+
+[directory]
+other = "Рабочий каталог"
+
+[directory_close]
+other = "Закрыть рабочий каталог"
+
+[directory_open]
+other = "Открыть рабочий каталог"
+
+[sidebar_left]
+other = "Левая панель"
+
+[sidebar_left_open]
+other = "Открыть левую панель"
+
+[sidebar_left_close]
+other = "Закрыть левую панель"
+
+[sidebar_right]
+other = "Правая панель"
+
+[sidebar_right_open]
+other = "Открыть правую панель"
+
+[sidebar_right_close]
+other = "Закрыть правую панель"
+
+[switch_theme]
+other = "Сменить тему"
+
+[folder]
+other = "Папка"
+
+[folder_control]
+other = "Открыть или закрыть все папки"
+
+[giscus_lang]
+other = "ru"
+
+[error404]
+other = "Упс! Страница не найдена."
+
+[readmore]
+other = "Читать далее"
+
+[search]
+other = "Поиск..."
+
+[footer_made_with]
+other = "Создано с ♥️ с использованием"
+
+[footer_all_rights]
+other = "Все права защищены."

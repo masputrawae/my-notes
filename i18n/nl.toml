@@ -1,0 +1,89 @@
+[publish]
+other = "Publiceer"
+
+[last_modified]
+other = "Laatst Aangepast"
+
+[pinned]
+other = "Vastgezet"
+
+[recent_post]
+other = "Recentste Berichten"
+
+[related_content]
+other = "Gerelateerd Inhoud"
+
+[no_related_content]
+other = "Geen gerelateerde inhoud gevonden"
+
+[top_five]
+other = "Top 5"
+
+[toc]
+other = "Inhoudsopgave"
+
+[reading_time]
+other = "Leestijd"
+
+[see_next]
+other = "Bekijk Volgende"
+
+[see_previous]
+other = "Bekijk Vorige"
+
+[result]
+other = "Resultaat"
+
+[directory]
+other = "Werkmap"
+
+[directory_close]
+other = "Sluit Werkmap"
+
+[directory_open]
+other = "Open Werkmap"
+
+[sidebar_left]
+other = "Linker Zijbalk"
+
+[sidebar_left_open]
+other = "Open Linker Zijbalk"
+
+[sidebar_left_close]
+other = "Sluit Linker Zijbalk"
+
+[sidebar_right]
+other = "Rechter Zijbalk"
+
+[sidebar_right_open]
+other = "Open Rechter Zijbalk"
+
+[sidebar_right_close]
+other = "Sluit Rechter Zijbalk"
+
+[switch_theme]
+other = "Wissel Thema"
+
+[folder]
+other = "Map"
+
+[folder_control]
+other = "Open of Sluit Alle Mappen"
+
+[giscus_lang]
+other = "nl"
+
+[error404]
+other = "Oeps! De pagina die je zoekt is niet gevonden."
+
+[readmore]
+other = "Lees Meer"
+
+[search]
+other = "Zoeken..."
+
+[footer_made_with]
+other = "Gemaakt met ♥️ met"
+
+[footer_all_rights]
+other = "Alle rechten voorbehouden."

@@ -1,0 +1,149 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.offcanvas { //============ OFFCANVAS =============//
+  background-color: var(--bg-first);
+  padding: 0.75rem;
+  width: 280px;
+  height: 100dvh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 500;
+  @include m.transition(visibility, transform);
+
+  // BUTTON HIDEN
+  .btn[data-toggle-offcanvas=leftOffcanvas],
+  .btn[data-toggle-offcanvas=rightOffcanvas]{
+    display: none;
+  }
+
+  &__header {
+    @include m.flex-between;
+    gap: 8px;
+    position: relative;
+  }
+
+  &__button-wrapper {
+    @include m.flex-center;
+    gap: 8px;
+
+    &--p-absolute {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &--global {
+    position: fixed;
+    transform: translateX(-100%);
+    visibility: visible;
+    width: 360px;
+    max-width: 100%;
+    z-index: 600;
+  }
+
+  &--left {
+    left: 0;
+    border-right: 2px solid var(--border-first);
+  }
+
+  &--right {
+    right: 0;
+  }
+
+  @include m.max(xl){
+    &--responsive {
+      position: fixed;
+      visibility: visible;
+    }
+
+    &--right {
+      transform: translateX(100%);
+      width: 320px;
+
+      // BUTTON SHOW
+      .btn[data-toggle-offcanvas=rightOffcanvas]{
+        display: flex;
+      }
+    }
+  }
+  
+  @include m.max(lg){
+    &--left {
+      transform: translateX(-100%);
+      width: 320px;
+
+      // BUTTON SHOW
+      .btn[data-toggle-offcanvas=leftOffcanvas]{
+        display: flex;
+      }
+    }
+  }
+
+  &--is-open {
+    transform: translate(0%);
+    visibility: visible;
+  }
+
+  .search { //============ SEARCHBAR =============//
+    @include m.flex-between;
+    gap: 1rem;
+    border: 1px solid var(--border-first);
+    border-radius: 0.25rem;
+    padding: 0.25rem 1rem;
+    color: var(--text-second);
+    background-color: var(--bg-first);
+  
+    &__input {
+      width: 100%;
+      outline: none;
+      border: none;
+      color: var(--text-second);
+      background-color: var(--bg-first);
+  
+      &::placeholder {
+        color: var(--text-third);
+      }
+    }
+  }
+}
+
+.brand { //============ BRAND =============//
+  display: block;
+  text-decoration: none;
+  margin-left: 1rem;
+
+  &__logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 0.5rem;
+    border: 3px solid var(--border-first);
+    box-shadow: var(--shadow-md);
+    @include m.transition(border-color, box-shadow);
+
+    &:hover {
+      border-color: var(--accent-first);
+      box-shadow: var(--shadow-lg);
+    }
+  }
+
+  &__title {
+    color: var(--accent-first);
+    font-weight: 700;
+    margin: 0;
+    text-shadow: var(--shadow-ac-first);
+  }
+
+  &__subtitle {
+    margin-block: 0.5rem;
+    font-weight: 500;
+    color: var(--text-first);
+    font-size: v.$font__size--sm;
+    font-style: italic;
+    border-bottom: 1px solid var(--border-second);
+  }
+}

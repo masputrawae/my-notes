@@ -1,0 +1,8 @@
+{{- $src := .Get "src" | safeURL | relURL -}}
+{{- $alt := .Get "alt" | default "Image" -}}
+{{- $align := .Get "align" | default "center" -}}
+
+<figure class="image image--{{ $align }}">
+  <img src="{{ $src }}" alt="{{ $alt }}">
+  {{ with .Inner }}<figcaption class="image__caption">{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

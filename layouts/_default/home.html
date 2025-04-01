@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main class="u-container main">
+  <article class="main__layout markdown">
+    {{ .Content | safeHTML }}
+  </article>
+  <div class="main__layout main__layout--grid">
+    {{ partial "content/taxonomy-list.html" . }}
+  </div>
+</main>
+{{ end }}

@@ -1,0 +1,16 @@
+{{ $pinned := where .Site.RegularPages "Params.pinned" true }}
+{{ if $pinned }}
+<nav class="navbar navbar--widget">
+  <div class="navbar__label">{{ i18n "pinned" }}</div>
+  
+  <ul class="nav nav--widget">
+    {{ range $pinned | first 5 }}
+      <li class="nav__item">
+        <a href="{{ .RelPermalink }}" class="btn btn--text-xs btn--widget">
+          <span class="btn--text-ellipsis">{{ .Title }}</span>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}

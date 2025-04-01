@@ -1,0 +1,146 @@
+$colors: (
+  //============ DARK =============//
+  "dark": (
+    "bg": (
+      "first": #0d1117,
+      "second": #161b22,
+      "third": #1f2933,
+    ),
+    
+    "text": (
+      "white": #e6e6e6,
+      "first": #e1e6ec,
+      "second": #c1c7ce,
+      "third": #6e7681, 
+    ),
+
+    "accent": (
+      "first": #00d8ff,
+      "second": #0078ff,
+      "third": #9b00ff, 
+    ),
+
+    "border": (
+      "first": #2d3748,
+      "second": rgba(0, 216, 255, 0.3)
+    ),
+
+    "shadow": (
+      "sm": 0 1px 4px 0 rgba(0, 0, 0, 0.5),
+      "md": 0 4px 8px -1px rgba(0, 0, 0, 0.6),
+      "lg": 0 10px 25px -5px rgba(0, 0, 0, 0.7),
+      "ac-first": 0 0 12px rgba(0, 216, 255, 0.8),
+      "ac-second": 0 0 12px rgba(0, 120, 255, 0.8), 
+      "ac-third": 0 0 12px rgba(155, 0, 255, 0.8)
+    ),
+
+    "alert": (
+      "tip": #00ffcc,
+      "info": #00b4ff,
+      "success": #00ff88,
+      "warning": #ffcc00,
+      "danger": #ff4444,
+      "error": #ff0055,
+      "bug": #ff00ff,
+      "note": #00eaff,
+      "abstract": #9b00ff,
+      "todo": #ff8800,
+      "question": #00ffdd,
+      "failure": #ff3366,
+      "example": #00ffaa,
+      "quote": #ff66cc,
+      "important": #ff0066,
+    ),
+
+    "code": (
+      "bg": #0d1117,
+      "text": #c9d1d9,
+      "function": #00b4ff,
+      "highlight-bg": #161b22,
+      "keyword": #ff6b6b,
+      "string": #00eaff,
+      "comment": #6e7681,
+      "number": #d2a8ff,
+      "line-number": #30363d,
+      "operator": #ffab70,
+      "class": #ff8c42,
+    ),
+  ),
+  //============ LIGHT =============//
+  "light": (
+    "bg": (
+      "first": #f5faff,
+      "second": #eaf4ff,
+      "third": #d6eaff,
+    ),
+
+    "text": (
+      "white": #ffffff,
+      "first": #1a202c,
+      "second": #202836,
+      "third": #4a5568,
+    ),
+
+    "accent": (
+      "first": #004797,
+      "second": #00b4ff,
+      "third": #9b00ff,
+    ),
+
+    "border": (
+      "first": #cbd5e0,
+      "second": rgba(0, 120, 255, 0.3)
+    ),
+
+    "shadow": (
+      "sm": 0 1px 4px 0 rgba(0, 0, 0, 0.1),
+      "md": 0 4px 8px -1px rgba(0, 0, 0, 0.15),
+      "lg": 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+      "ac-first": 0 0 12px rgba(0, 120, 255, 0.5),
+      "ac-second": 0 0 12px rgba(0, 180, 255, 0.5), 
+      "ac-third": 0 0 12px rgba(155, 0, 255, 0.5)
+    ),
+
+    "alert": (
+      "tip": #007a66,
+      "info": #005f99,
+      "success": #007a4d,
+      "warning": #cc9900,
+      "danger": #cc3333,
+      "error": #cc0044,
+      "bug": #990099,
+      "note": #007a99,
+      "abstract": #660099,
+      "todo": #cc6600,
+      "question": #007a80,
+      "failure": #cc3366,
+      "example": #007a66,
+      "quote": #cc6699,
+      "important": #cc0055,
+    ),
+
+    "code": (
+      "bg": #ffffff,
+      "text": #1a202c,
+      "function": #0078ff,
+      "highlight-bg": #f0f4f8,
+      "keyword": #ff6b6b,
+      "string": #0078ff,
+      "comment": #718096,
+      "number": #9b00ff,
+      "line-number": #708299,
+      "operator": #ff6b6b,
+      "class": #ff8c42,
+    ),
+  )
+);
+
+@each $theme, $categories in $colors {
+  [data-theme="#{$theme}"] {
+    @each $category, $shades in $categories {
+      @each $shade, $value in $shades {
+        --#{$category}-#{$shade}: #{$value};
+      }
+    }
+  }
+}

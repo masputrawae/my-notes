@@ -1,0 +1,89 @@
+[publish]
+other = "نشر"
+
+[last_modified]
+other = "آخر تعديل"
+
+[pinned]
+other = "مثبت"
+
+[recent_post]
+other = "أحدث المنشورات"
+
+[related_content]
+other = "محتوى ذو صلة"
+
+[no_related_content]
+other = "لم يتم العثور على محتوى ذو صلة"
+
+[top_five]
+other = "أفضل 5 في"
+
+[toc]
+other = "جدول المحتويات"
+
+[reading_time]
+other = "وقت القراءة"
+
+[see_next]
+other = "مشاهدة التالي"
+
+[see_previous]
+other = "مشاهدة السابق"
+
+[result]
+other = "النتيجة"
+
+[directory]
+other = "دليل العمل"
+
+[directory_close]
+other = "إغلاق دليل العمل"
+
+[directory_open]
+other = "فتح دليل العمل"
+
+[sidebar_left]
+other = "الشريط الجانبي الأيسر"
+
+[sidebar_left_open]
+other = "فتح الشريط الجانبي الأيسر"
+
+[sidebar_left_close]
+other = "إغلاق الشريط الجانبي الأيسر"
+
+[sidebar_right]
+other = "الشريط الجانبي الأيمن"
+
+[sidebar_right_open]
+other = "فتح الشريط الجانبي الأيمن"
+
+[sidebar_right_close]
+other = "إغلاق الشريط الجانبي الأيمن"
+
+[switch_theme]
+other = "تغيير السمة"
+
+[folder]
+other = "المجلد"
+
+[folder_control]
+other = "فتح أو إغلاق جميع المجلدات"
+
+[giscus_lang]
+other = "ar"
+
+[error404]
+other = "عذرًا! الصفحة التي تبحث عنها غير موجودة."
+
+[readmore]
+other = "اقرأ المزيد"
+
+[search]
+other = "بحث..."
+
+[footer_made_with]
+other = "مصنوع بحب ♥️ باستخدام"
+
+[footer_all_rights]
+other = "جميع الحقوق محفوظة."

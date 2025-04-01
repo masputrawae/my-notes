@@ -1,0 +1,89 @@
+[publish]
+other = "Publicera"
+
+[last_modified]
+other = "Senast Ändrad"
+
+[pinned]
+other = "Fäst"
+
+[recent_post]
+other = "Senaste Inlägg"
+
+[related_content]
+other = "Relaterat Innehåll"
+
+[no_related_content]
+other = "Inget relaterat innehåll hittades"
+
+[top_five]
+other = "Topp 5"
+
+[toc]
+other = "Innehållsförteckning"
+
+[reading_time]
+other = "Lästid"
+
+[see_next]
+other = "Se Nästa"
+
+[see_previous]
+other = "Se Föregående"
+
+[result]
+other = "Resultat"
+
+[directory]
+other = "Arbetskatalog"
+
+[directory_close]
+other = "Stäng Arbetskatalog"
+
+[directory_open]
+other = "Öppna Arbetskatalog"
+
+[sidebar_left]
+other = "Vänster Sidopanel"
+
+[sidebar_left_open]
+other = "Öppna Vänster Sidopanel"
+
+[sidebar_left_close]
+other = "Stäng Vänster Sidopanel"
+
+[sidebar_right]
+other = "Höger Sidopanel"
+
+[sidebar_right_open]
+other = "Öppna Höger Sidopanel"
+
+[sidebar_right_close]
+other = "Stäng Höger Sidopanel"
+
+[switch_theme]
+other = "Byt Tema"
+
+[folder]
+other = "Mapp"
+
+[folder_control]
+other = "Öppna eller Stäng Alla Mappar"
+
+[giscus_lang]
+other = "sv"
+
+[error404]
+other = "Oops! Sidan du letar efter hittades inte."
+
+[readmore]
+other = "Läs Mer"
+
+[search]
+other = "Sök..."
+
+[footer_made_with]
+other = "Skapad med ♥️ med"
+
+[footer_all_rights]
+other = "Alla rättigheter förbehållna."

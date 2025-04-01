@@ -1,0 +1,89 @@
+[publish]
+other = "Publier"
+
+[last_modified]
+other = "Dernière modification"
+
+[pinned]
+other = "Épinglé"
+
+[recent_post]
+other = "Article Récent"
+
+[related_content]
+other = "Contenu Connexe"
+
+[no_related_content]
+other = "Aucun contenu connexe trouvé"
+
+[top_five]
+other = "Top 5 en"
+
+[toc]
+other = "Table des Matières"
+
+[reading_time]
+other = "Temps de Lecture"
+
+[see_next]
+other = "Voir Suivant"
+
+[see_previous]
+other = "Voir Précédent"
+
+[result]
+other = "Résultat"
+
+[directory]
+other = "Répertoire de Travail"
+
+[directory_close]
+other = "Fermer le Répertoire de Travail"
+
+[directory_open]
+other = "Ouvrir le Répertoire de Travail"
+
+[sidebar_left]
+other = "Barre Latérale Gauche"
+
+[sidebar_left_open]
+other = "Ouvrir la Barre Latérale Gauche"
+
+[sidebar_left_close]
+other = "Fermer la Barre Latérale Gauche"
+
+[sidebar_right]
+other = "Barre Latérale Droite"
+
+[sidebar_right_open]
+other = "Ouvrir la Barre Latérale Droite"
+
+[sidebar_right_close]
+other = "Fermer la Barre Latérale Droite"
+
+[switch_theme]
+other = "Changer de Thème"
+
+[folder]
+other = "Dossier"
+
+[folder_control]
+other = "Ouvrir ou Fermer Tous les Dossiers"
+
+[giscus_lang]
+other = "fr"
+
+[error404]
+other = "Oups ! La page que vous recherchez est introuvable."
+
+[readmore]
+other = "Lire Plus"
+
+[search]
+other = "Rechercher..."
+
+[footer_made_with]
+other = "Fait avec ♥️ en utilisant"
+
+[footer_all_rights]
+other = "Tous droits réservés."

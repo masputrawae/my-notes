@@ -1,0 +1,123 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  position: relative;
+  padding: 0.5rem;
+
+  background-color: var(--bg-first);
+  color: var(--text-first);
+  border: 1px solid var(--border-first);
+  border-radius: .15rem;
+  box-shadow: var(--shadow-md);
+
+  font-size: v.$font__size--md;
+  font-weight: 600;
+  text-decoration: none;
+
+  @include m.transition(box-shadow, color, background-color);
+  
+  .bi {
+    @include m.flex-center;
+    font-size: v.$font__size--xl;
+  }
+
+  // MODIFIER btn--icon
+  &--icon {
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    .bi{font-size: v.$font__size--xl;}
+  }
+  
+  // MODIFIER btn--text-xs
+  &--text-xs {
+    font-size: v.$font__size--xs;
+  }
+
+  &--text-ellipsis{@include m.text-ellipsis;}
+
+  // MODIFIER btn--folder
+  &--folder {
+    width: 100%;
+    font-size: v.$font__size--sm;
+  }
+
+  // MODIFIER btn--breadcrumb
+  &--breadcrumb {padding: 0 .5rem;}
+
+  // MODIFIER btn--circle
+  &--circle {
+    border-radius: 50%;
+  }
+
+  // MODIFIER btn--cloud
+  &--cloud {
+    border-radius: 10rem;
+    padding: 1rem; 
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 0%;
+    height: 115%;
+    border-radius: 1rem;
+    background-color: var(--accent-first);
+    
+    @include m.transition(box-shadow, width);
+  }
+
+  &:hover {
+    color: var(--accent-third);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-third);
+    background-color: var(--bg-first);
+    
+    &::before {
+      width: 90%;
+      box-shadow: var(--shadow-ac-third);
+      background-color: var(--accent-third);
+    }
+  }
+  
+  &:focus-visible,
+  &:active, 
+  &--active {
+    background-color: var(--bg-third);
+    color: var(--accent-first);
+    border-color: var(--accent-first);
+    outline: none;
+    
+    &::before {
+      width: 90%;
+      box-shadow: var(--shadow-ac-first);
+      background-color: var(--accent-first);
+    }
+  }
+
+  // MODIFIER btn--disabled
+  &--disabled {
+    cursor:not-allowed;
+    color: var(--text-third);
+     
+    &:hover {
+      color: var(--text-third);
+      box-shadow: none;
+      border-color: var(--text-third);
+    }
+
+    &:hover::before {
+      width: 0%;
+      box-shadow: none;
+    }
+  }
+}

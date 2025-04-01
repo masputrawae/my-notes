@@ -1,0 +1,60 @@
+<footer class="u-container footer">
+  {{ if site.Params.giscus.active }}
+    {{ partial "widget/giscus.html" . }}
+  {{ end }}
+  <nav class="navbar navbar--footer">
+    {{- with site.Params.social }}
+      {{- range $key, $value := . }}
+        <a 
+          href="{{ $value.url }}" 
+          class="btn btn--icon btn--circle btn--social"
+          id="{{ $value.name }}"
+          title="{{ $value.name }}" 
+          aria-label="Go to {{ $value.name }}"
+          data-social="{{ $value.name }}"
+          rel="noopener noreferrer" target="_blank"
+          >
+            <i class="bi {{ $value.icon }}"></i>
+        </a>
+      {{- end }}
+    {{- end }}
+    <button 
+      class="btn btn--icon btn--circle btn--social" 
+      data-theme-toggle="switchTheme" 
+      title="{{ i18n "switch_theme" }}" 
+      aria-label="{{ i18n "switch_theme" }}"
+      >
+        <i class="bi bi-moon-stars"></i>
+    </button>
+    {{ if gt (len $.Site.Home.AllTranslations) 1 }}
+      <div class="lang-switch">
+        <label for="switchLang" aria-label="Switch Language"></label>
+        <select onchange="location = this.value;" class="btn" id="switchLang">
+        {{ range $.Site.Home.AllTranslations }}
+          <option value="{{ .RelPermalink }}" {{ if eq .Language.Lang $.Site.Language.Lang }}selected{{ end }}>{{ .Language.LanguageName }}</option>
+        {{ end }}
+        </select>
+      </div>
+    {{ end }}
+  </nav>
+  
+  <section class="footer__copyright">
+    <p class="footer__content">
+      <span>{{ T "footer_made_with" }}</span>
+      <a 
+        href="https://gohugo.io" 
+        class="footer__link" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Hugo
+      </a>
+    </p>
+    <p>
+      &copy; 
+      <span>{{ now.Year | safeHTML }}</span> - 
+      <span>{{ .Site.Title }}</span>. 
+      {{ i18n "footer_all_rights" }}
+    </p>
+  </section>  
+</footer>

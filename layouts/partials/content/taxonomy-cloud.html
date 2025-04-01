@@ -1,0 +1,12 @@
+<div class="nav nav--row nav--cloud">
+  {{ $taxonomy := .Data.Plural }}
+  {{ $terms := index .Site.Taxonomies $taxonomy }}
+  {{ $max := math.Max (len $terms) 1 }}
+
+  {{ range $term, $pages := $terms }}
+    {{ $size := div (len $pages) $max | mul 1 | add 0.75 }}
+    <a href="{{ .Page.RelPermalink }}" class="btn btn--text-xs btn--cloud" style="font-size: {{ $size }}em;">
+      {{ .Page.Title }} ({{ len $pages }})
+    </a>
+  {{ end }}
+</div>

@@ -1,0 +1,14 @@
+name = "My Notes"
+license = "MIT"
+licenselink = "https://github.com/masputrawae/my-notes?tab=MIT-1-ov-file"
+description = "A clean, modern Hugo theme tailored for personal knowledge management and note-taking. It supports multilingual content and provides flexible organization options."
+
+homepage = "https://github.com/masputrawae/my-notes"
+demosite = "https://wumbojb.github.io/my-theme"
+
+tags = ['minimalist', 'responsive', 'personal', 'article', 'documents', 'modern']
+features = ['lightweight', 'fast', 'SEO optimized', 'themes switcher', 'multilingual', '3 sidebar', 'tree navigation'] 
+
+[author]
+name = 'Putra Jaya'
+homepage = ''

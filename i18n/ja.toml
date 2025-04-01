@@ -1,0 +1,89 @@
+[publish]
+other = "公開"
+
+[last_modified]
+other = "最終更新"
+
+[pinned]
+other = "ピン留め"
+
+[recent_post]
+other = "最新の投稿"
+
+[related_content]
+other = "関連コンテンツ"
+
+[no_related_content]
+other = "関連コンテンツが見つかりません"
+
+[top_five]
+other = "トップ5"
+
+[toc]
+other = "目次"
+
+[reading_time]
+other = "読書時間"
+
+[see_next]
+other = "次へ"
+
+[see_previous]
+other = "前へ"
+
+[result]
+other = "結果"
+
+[directory]
+other = "作業ディレクトリ"
+
+[directory_close]
+other = "作業ディレクトリを閉じる"
+
+[directory_open]
+other = "作業ディレクトリを開く"
+
+[sidebar_left]
+other = "左サイドバー"
+
+[sidebar_left_open]
+other = "左サイドバーを開く"
+
+[sidebar_left_close]
+other = "左サイドバーを閉じる"
+
+[sidebar_right]
+other = "右サイドバー"
+
+[sidebar_right_open]
+other = "右サイドバーを開く"
+
+[sidebar_right_close]
+other = "右サイドバーを閉じる"
+
+[switch_theme]
+other = "テーマを変更"
+
+[folder]
+other = "フォルダ"
+
+[folder_control]
+other = "すべてのフォルダを開くまたは閉じる"
+
+[giscus_lang]
+other = "ja"
+
+[error404]
+other = "おっと！お探しのページは見つかりませんでした。"
+
+[readmore]
+other = "続きを読む"
+
+[search]
+other = "検索..."
+
+[footer_made_with]
+other = "♥️ を込めて作成"
+
+[footer_all_rights]
+other = "すべての権利を保有。"

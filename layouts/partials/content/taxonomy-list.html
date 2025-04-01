@@ -1,0 +1,60 @@
+{{ $excluded := .Site.Params.excluded_taxonomies | default (slice "tags" "categories") }}
+{{ range $taxonomy, $terms := site.Taxonomies }}
+  {{ if not (in $excluded $taxonomy) }}
+    <nav class="navbar navbar--taxonomy">
+      <div class="navbar__header">
+        <div class="navbar__label">
+          {{ $taxonomy | humanize | title }}
+        </div>
+        <div class="navbar__button navbar__button--controls">
+          <button 
+            class="btn btn--icon btn--circle btn--prev" 
+            data-taxonomy="{{- $taxonomy | humanize | title -}}"
+            aria-label="{{ i18n "see_previous" }}"
+            title="{{ i18n "see_previous" }}"
+            >
+              <i class="bi bi-arrow-left-circle-fill"></i>
+          </button>
+          <button 
+            class="btn btn--icon btn--circle btn--next" 
+            data-taxonomy="{{- $taxonomy | humanize | title -}}"
+            aria-label="{{ i18n "see_next" }}"
+            title="{{ i18n "see_next" }}"
+            >
+              <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div 
+        class="navbar__wrapper navbar__wrapper--taxonomy" 
+        data-taxonomy="{{- $taxonomy | humanize | title -}}"
+        >
+        {{ $count := 0 }}
+        {{ $groupIndex := 0 }}
+        <ul class="nav nav--taxonomy" data-group="{{- $groupIndex -}}">
+          {{ range $terms }}
+            {{ with .Page }}
+              {{ if eq $count 5 }}
+                </ul>
+                {{ $groupIndex = add $groupIndex 1 }}
+                <ul 
+                  class="nav nav--taxonomy" 
+                  data-group="{{ $groupIndex }}" 
+                  class="hidden" 
+                  style="display: none;"
+                  >
+                {{ $count = 0 }}
+              {{ end }}
+              <li class="nav__item">
+                <a href="{{ .RelPermalink }}" class="btn btn--taxonomy">
+                  {{ .Title }}
+                </a>
+              </li>
+              {{ $count = add $count 1 }}
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+  {{ end }}
+{{ end }}

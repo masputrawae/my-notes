@@ -1,0 +1,14 @@
+/* Menghilangkan arrow pada select di semua browser */
+select {
+  -webkit-appearance: none; /* Untuk browser berbasis Webkit (Chrome, Safari) */
+  -moz-appearance: none;    /* Untuk Firefox */
+  appearance: none;         /* Untuk browser lainnya */
+  background: transparent;  /* Menghilangkan background default */
+  border: 1px solid #ccc;   /* Kamu bisa menyesuaikan border sesuai kebutuhan */
+  padding: 10px;            /* Sesuaikan padding jika perlu */
+}
+
+/* Menambahkan custom arrow */
+select::-ms-expand {
+  display: none; /* Menghilangkan arrow di IE dan Edge */
+}

@@ -1,0 +1,89 @@
+[publish]
+other = "发布"
+
+[last_modified]
+other = "最后修改"
+
+[pinned]
+other = "已置顶"
+
+[recent_post]
+other = "最新文章"
+
+[related_content]
+other = "相关内容"
+
+[no_related_content]
+other = "未找到相关内容"
+
+[top_five]
+other = "前5名"
+
+[toc]
+other = "目录"
+
+[reading_time]
+other = "阅读时间"
+
+[see_next]
+other = "查看下一篇"
+
+[see_previous]
+other = "查看上一篇"
+
+[result]
+other = "结果"
+
+[directory]
+other = "工作目录"
+
+[directory_close]
+other = "关闭工作目录"
+
+[directory_open]
+other = "打开工作目录"
+
+[sidebar_left]
+other = "左侧边栏"
+
+[sidebar_left_open]
+other = "打开左侧边栏"
+
+[sidebar_left_close]
+other = "关闭左侧边栏"
+
+[sidebar_right]
+other = "右侧边栏"
+
+[sidebar_right_open]
+other = "打开右侧边栏"
+
+[sidebar_right_close]
+other = "关闭右侧边栏"
+
+[switch_theme]
+other = "切换主题"
+
+[folder]
+other = "文件夹"
+
+[folder_control]
+other = "打开或关闭所有文件夹"
+
+[giscus_lang]
+other = "zh"
+
+[error404]
+other = "哎呀！您要查找的页面未找到。"
+
+[readmore]
+other = "阅读更多"
+
+[search]
+other = "搜索..."
+
+[footer_made_with]
+other = "用 ♥️ 制作，使用"
+
+[footer_all_rights]
+other = "保留所有权利。"

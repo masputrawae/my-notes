@@ -1,0 +1,89 @@
+[publish]
+other = "게시"
+
+[last_modified]
+other = "마지막 수정"
+
+[pinned]
+other = "고정됨"
+
+[recent_post]
+other = "최근 게시물"
+
+[related_content]
+other = "관련 콘텐츠"
+
+[no_related_content]
+other = "관련 콘텐츠가 없습니다"
+
+[top_five]
+other = "상위 5개"
+
+[toc]
+other = "목차"
+
+[reading_time]
+other = "읽는 시간"
+
+[see_next]
+other = "다음 보기"
+
+[see_previous]
+other = "이전 보기"
+
+[result]
+other = "결과"
+
+[directory]
+other = "작업 디렉터리"
+
+[directory_close]
+other = "작업 디렉터리 닫기"
+
+[directory_open]
+other = "작업 디렉터리 열기"
+
+[sidebar_left]
+other = "왼쪽 사이드바"
+
+[sidebar_left_open]
+other = "왼쪽 사이드바 열기"
+
+[sidebar_left_close]
+other = "왼쪽 사이드바 닫기"
+
+[sidebar_right]
+other = "오른쪽 사이드바"
+
+[sidebar_right_open]
+other = "오른쪽 사이드바 열기"
+
+[sidebar_right_close]
+other = "오른쪽 사이드바 닫기"
+
+[switch_theme]
+other = "테마 변경"
+
+[folder]
+other = "폴더"
+
+[folder_control]
+other = "모든 폴더 열기 또는 닫기"
+
+[giscus_lang]
+other = "ko"
+
+[error404]
+other = "오류! 찾을 수 없는 페이지입니다."
+
+[readmore]
+other = "더 보기"
+
+[search]
+other = "검색..."
+
+[footer_made_with]
+other = "♥️로 만든"
+
+[footer_all_rights]
+other = "모든 권리 보유."

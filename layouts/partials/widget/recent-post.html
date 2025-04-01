@@ -1,0 +1,17 @@
+{{ $recent := .Site.RegularPages }}
+{{ if $recent }}
+  <nav class="navbar navbar--widget">
+    <div class="navbar__label">{{ i18n "recent_post" }}</div>
+    
+    <ul class="nav nav--widget">
+      {{ range $recent | first 5 }}
+        <li class="nav__item">
+          <a href="{{ .RelPermalink }}" class="btn btn--text-xs btn--widget">
+            <span class="btn--text-ellipsis">{{ .Title }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    
+  </nav>
+{{ end }}

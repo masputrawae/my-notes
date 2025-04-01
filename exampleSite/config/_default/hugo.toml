@@ -1,0 +1,92 @@
+#====================================#
+#=========== BASE SETTING ===========#
+title       = "My Notes"
+baseURL     = "https://your-domain/"
+
+enableEmoji  = true
+capitalizeListTitles = false
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = false
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+    respectDoNotTrack = false
+#====================================#
+#======== TAXONOMIES SETTING ========#
+[taxonomies]
+  # Default, It's safer not to delete it
+  category  = "categories"
+  tag       = "tags"
+  # Optional, can add or remove, or add other things
+  status    = "status"
+  group     = "grouping"
+  series    = "series"
+
+#====================================#
+#============== MARKUP ==============#
+[markup]
+  [markup.tableOfContents]
+    endLevel    = 6
+    ordered     = false
+    startLevel  = 2
+  [markup.highlight]
+    codeFences         = true
+    guessSyntax        = true
+    style              = "github-dark"
+    noClasses          = false
+    lineNumbersInTable = false
+    lineNos = true
+    anchorLineNos = true
+    lineAnchors = ''
+    lineNoStart = 1
+    tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe    = true
+
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+#====================================#
+#============== OUTPUT ==============#
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+
+[outputFormats]
+
+  [outputFormats.search]
+    mediaType       = "application/json"
+    baseName        = "search"
+    isPlainText     = true
+    notAlternative  = true
+    
+  [outputFormats.manifest]
+    mediaType       = "application/json"
+    baseName        = "manifest"
+    isPlainText     = true
+    notAlternative  = true
+
+[outputs]
+  home = ["HTML", "search", "manifest", 'rss']
+  section = ['html', 'rss']
+  
+[services]
+  [services.rss]
+    limit = 42
+
+#====================================#
+#============ PAGINATION ============#
+[pagination]
+  disableAliases = false
+  pagerSize = 6
+
+#====================================#
+#============== MODULE ==============#
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.145.0"

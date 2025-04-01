@@ -1,0 +1,61 @@
+{{ $icons := dict
+  "tip" "bi-fire"
+  "info" "bi-info-circle"
+  "success" "bi-clipboard-check"
+  "warning" "bi-exclamation-octagon"
+  "danger" "bi-lightning-fill"
+  "error" "bi-bug"
+  "bug" "bi-bug-fill"
+  "note" "bi-pen"
+  "abstract" "bi-clipboard-data"
+  "todo" "bi-check2-circle"
+  "question" "bi-question-circle"
+  "failure" "bi-x"
+  "example" "bi-list-ul"
+  "quote" "bi-quote"
+  "important" "bi-exclamation-triangle-fill"
+  "history" "bi-clock-history"
+  "journal" "bi-journal-text"
+  "date" "bi-calendar"
+  "book" "bi-book"
+  "search" "bi-search"
+  "person" "bi-person"
+  "code" "bi-braces"
+  
+  "facebook" "bi-facebook"
+  "discord" "bi-discord"
+  "github" "bi-github"
+  "instagram" "bi-instagram"
+  "linkedin" "bi-linkedin"
+  "youtube" "bi-youtube"
+  "reddit" "bi-reddit"
+  "behance" "bi-behance"
+  "dribbble" "bi-dribbble"
+  "medium" "bi-medium"
+  "pinterest" "bi-pinterest"
+  "snapchat" "bi-snapchat"
+  "vimeo" "bi-vimeo"
+  "tiktok" "bi-tiktok"
+  "twitter-x" "bi-twitter-x"
+  "whatsapp" "bi-whatsapp"
+}}
+
+{{ if eq .Type "alert" }}
+  <blockquote class="alert alert--default-color alert--{{ .AlertType }}">
+    <header class="alert__header">
+      <i class="bi {{ index $icons .AlertType }} alert__icon"></i>
+      {{ with .AlertTitle }}
+        <h3 class="alert__title">{{ . }}</h3>
+      {{ else }}
+        {{ or (i18n .AlertType) (title .AlertType) }}
+      {{ end }}
+    </header>
+    <div class="alert__content">
+      {{ .Text }}
+    </div>
+  </blockquote>
+{{ else }}
+  <blockquote class="alert alert--blockquote">
+    {{ .Text }}
+  </blockquote>
+{{ end }}

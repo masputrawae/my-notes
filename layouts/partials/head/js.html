@@ -1,0 +1,15 @@
+<!-- |===========| START: JAVASCRIPT |===========| -->
+<script src="{{ "js/lunr.min.js" | relURL }}" defer></script>
+{{- with resources.Get "js/main.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build }}
+      <script src="{{ .RelPermalink }}" defer></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+<!-- |===========| END: JAVASCRIPT |===========| -->

@@ -1,0 +1,89 @@
+[publish]
+other = "Veröffentlichen"
+
+[last_modified]
+other = "Zuletzt geändert"
+
+[pinned]
+other = "Angeheftet"
+
+[recent_post]
+other = "Neuester Beitrag"
+
+[related_content]
+other = "Ähnliche Inhalte"
+
+[no_related_content]
+other = "Keine ähnlichen Inhalte gefunden"
+
+[top_five]
+other = "Top 5 in"
+
+[toc]
+other = "Inhaltsverzeichnis"
+
+[reading_time]
+other = "Lesezeit"
+
+[see_next]
+other = "Weiterlesen"
+
+[see_previous]
+other = "Zurück"
+
+[result]
+other = "Ergebnis"
+
+[directory]
+other = "Arbeitsverzeichnis"
+
+[directory_close]
+other = "Arbeitsverzeichnis schließen"
+
+[directory_open]
+other = "Arbeitsverzeichnis öffnen"
+
+[sidebar_left]
+other = "Linke Seitenleiste"
+
+[sidebar_left_open]
+other = "Linke Seitenleiste öffnen"
+
+[sidebar_left_close]
+other = "Linke Seitenleiste schließen"
+
+[sidebar_right]
+other = "Rechte Seitenleiste"
+
+[sidebar_right_open]
+other = "Rechte Seitenleiste öffnen"
+
+[sidebar_right_close]
+other = "Rechte Seitenleiste schließen"
+
+[switch_theme]
+other = "Thema wechseln"
+
+[folder]
+other = "Ordner"
+
+[folder_control]
+other = "Alle Ordner öffnen oder schließen"
+
+[giscus_lang]
+other = "de"
+
+[error404]
+other = "Hoppla! Die gesuchte Seite wurde nicht gefunden."
+
+[readmore]
+other = "Mehr lesen"
+
+[search]
+other = "Suche..."
+
+[footer_made_with]
+other = "Erstellt mit ♥️ mit"
+
+[footer_all_rights]
+other = "Alle Rechte vorbehalten."

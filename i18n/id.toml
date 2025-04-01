@@ -1,0 +1,89 @@
+[publish]
+other = "Terbitkan"
+
+[last_modified]
+other = "Terakhir Diubah"
+
+[pinned]
+other = "Disematkan"
+
+[recent_post]
+other = "Postingan Terbaru"
+
+[related_content]
+other = "Konten Terkait"
+
+[no_related_content]
+other = "Tidak ada konten terkait yang ditemukan"
+
+[top_five]
+other = "5 Teratas di"
+
+[toc]
+other = "Daftar isi"
+
+[reading_time]
+other = "Waktu Baca"
+
+[see_next]
+other = "Lihat Selanjutnya"
+
+[see_previous]
+other = "Lihat Sebelumnya"
+
+[result]
+other = "Hasil"
+
+[directory]
+other = "Direktori Kerja"
+
+[directory_close]
+other = "Tutup Direktori Kerja"
+
+[directory_open]
+other = "Buka Direktori Kerja"
+
+[sidebar_left]
+other = "Bilah Sisi Kiri"
+
+[sidebar_left_open]
+other = "Buka Bilah Sisi Kiri"
+
+[sidebar_left_close]
+other = "Tutup Bilah Sisi Kiri"
+
+[sidebar_right]
+other = "Bilah Sisi Kanan"
+
+[sidebar_right_open]
+other = "Buka Bilah Sisi Kanan"
+
+[sidebar_right_close]
+other = "Tutup Bilah Sisi Kanan"
+
+[switch_theme]
+other = "Ubah Tema"
+
+[folder]
+other = "Folder"
+
+[folder_control]
+other = "Buka Atau Tutup Semua Folder"
+
+[giscus_lang]
+other = "id"
+
+[error404]
+other = "Ups! Halaman yang Anda cari tidak ditemukan."
+
+[readmore]
+other = "Baca Selengkapnya"
+
+[search]
+other = "Cari..."
+
+[footer_made_with]
+other = "Dibuat dengan ♥️ menggunakan"
+
+[footer_all_rights]
+other = "Semua hak dilindungi."

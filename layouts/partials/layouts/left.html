@@ -1,0 +1,67 @@
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+<aside class="offcanvas offcanvas--responsive offcanvas--left" id="leftOffcanvas" aria-label="{{ i18n "sidebar_left" }}">
+  <header class="offcanvas__header">
+
+    <a href="{{ site.BaseURL | relURL }}" class="brand">
+      <img class="brand__logo" src="{{ site.Params.author.logo | relURL }}" alt="{{ site.Params.author.name }}" loading="lazy">
+      <h1 class="brand__title">{{ site.Params.author.name }}</h1>
+      <p class="brand__subtitle">{{ site.Params.author.subtitle }}</p>
+    </a>
+
+    <div class="offcanvas__button-wrapper offcanvas__button-wrapper--p-absolute">
+      <button class="btn btn--icon" data-toggle-offcanvas="globalOffcanvas" title="{{ i18n "directory_open" }}" aria-label="{{ i18n "directory_open" }}">
+        <i class="bi bi-folder2"></i>
+      </button>
+      <button class="btn btn--icon" data-toggle-offcanvas="leftOffcanvas" title="{{ i18n "sidebar_left_close" }}" aria-label="{{ i18n "sidebar_left_close" }}">
+        <i class="bi bi-x"></i>
+      </button>
+    </div>
+
+  </header>
+  <nav class="navbar navbar--menu">
+    <ul class="nav nav--menu">
+      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    </ul>
+  </nav>
+</aside>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL "class" "btn btn--menu" }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "btn btn--menu btn--active" "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu .}}
+      {{- $attrs = merge $attrs (dict "class" "btn btn--menu btn--ancestor" "aria-current" "true") }}
+    {{- end }}
+    {{- $name := .Name }}
+    {{- with .Identifier }}
+      {{- with T . }}
+        {{- $name = . }}
+      {{- end }}
+    {{- end }}
+    <li class="nav__item">
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >
+        {{- with .Pre }}
+          {{ . | safeHTML }}
+        {{- end }}
+        {{ $name }}
+      </a>
+      {{- with .Children }}
+        <ul class="nav">
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+      {{- end }}
+    </li>
+  {{- end }}
+{{- end }}

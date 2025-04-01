@@ -1,0 +1,18 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.footer {
+  text-align: center;
+
+  &__link {
+    color: var(--accent-first);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:is(:hover, :active, :focus-visible){
+      outline: none;
+      color: var(--accent-second);
+      text-decoration: underline;
+    }
+  }
+}

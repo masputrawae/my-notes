@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main class="u-container main">
+  <article class="main__layout markdown">
+    <header class="hero">
+      <h1>{{ .Title }}</h1>
+      {{ partial "content/meta-post.html" . }}
+    </header>
+    {{ .Content | safeHTML }}
+  </article>
+  <div class="main__layout main__layout--grid">
+    {{ partial "content/terms.html" (dict "taxonomy" "tags" "page" .) }}
+    {{ partial "content/terms.html" (dict "taxonomy" "categories" "page" .) }}
+  </div>
+</main>
+{{ if .Params.mathjax }}
+  {{ partial "content/mathjax.html" . }}
+{{ end }}
+{{ end }}

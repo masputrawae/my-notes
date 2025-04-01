@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" data-theme="dark">
+{{ partial "head/main.html" . }}
+<body class="layout">
+  {{ partial "layouts/left.html" (dict "menuID" "main" "page" .) }}
+  {{ partial "layouts/header.html" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "layouts/footer.html" . }}
+  {{ partial "layouts/right.html" . }}
+  {{ partial "layouts/offcanvas.html" . }}
+  {{ if .Store.Get "hasMermaid" }}
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  {{ end }}
+</body>
+</html>

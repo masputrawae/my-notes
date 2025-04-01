@@ -1,0 +1,21 @@
+<!-- |===========| START: RELATED POSTS |===========| -->
+<nav class="navbar navbar--widget">
+  <div class="navbar__label">{{ i18n "related_content" }}</div>
+  
+  <ul class="nav nav--widget">
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+    {{ if $related }}
+      {{ range $related }}
+        <li class="nav__item">
+          <a href="{{ .RelPermalink }}" class="btn btn--text-xs btn--widget">
+            <span class="btn--text-ellipsis">{{ .Title }}</span>
+          </a>
+        </li>
+      {{ end }}
+    {{ else }}
+      <li class="nav__item">{{ i18n "no_related_content" }}</li>
+    {{ end }}
+  </ul>
+  
+</nav>
+<!-- |===========| END: RELATED POSTS |===========| -->

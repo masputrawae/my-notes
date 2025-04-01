@@ -1,0 +1,83 @@
+// Importing variables and mixins
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+html[lang="ar"] {
+  direction: rtl;
+
+  .offcanvas__button-wrapper.offcanvas__button-wrapper--p-absolute {
+    right: 70%!important;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-third) var(--bg-second);
+  
+  &:hover {
+    scrollbar-color: var(--accent-third) var(--bg-second);
+  }
+}
+
+.u-container,
+.header,
+.main,
+.footer {
+  width: 100%;
+  max-width: 100vw;
+  padding-right: calc(1rem * 0.5);
+  padding-left: calc(1rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+
+  $container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+  );
+
+  @each $breakpoint, $max-width in $container-max-widths {
+    @include m.min($breakpoint) {
+      max-width: $max-width;
+    }
+  }
+}
+
+body { //============ GRID SETTING =============//
+  max-width: 100vw;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas:
+    "left top right"
+    "left main right"
+    "left bottom right";
+  grid-template-columns: 280px 1fr 280px;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  
+  .header,
+  .main,
+  .footer {
+    overflow-x: hidden;
+  }
+
+  .offcanvas--left {grid-area: left;}
+  .header {grid-area: top;}
+  .main {grid-area: main;}
+  .footer {grid-area: bottom;}
+  .offcanvas--right {grid-area: right;}
+
+  @include m.max(xl){
+    grid-template-areas: "left top" "left main" "left bottom";
+    grid-template-columns: 280px 1fr;
+  }
+
+  @include m.max(lg){
+    grid-template-areas: "top" "main" "bottom";
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

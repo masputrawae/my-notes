@@ -1,0 +1,89 @@
+[publish]
+other = "Yayınla"
+
+[last_modified]
+other = "Son Düzenleme"
+
+[pinned]
+other = "Sabitlendi"
+
+[recent_post]
+other = "Son Gönderiler"
+
+[related_content]
+other = "İlgili İçerikler"
+
+[no_related_content]
+other = "İlgili içerik bulunamadı"
+
+[top_five]
+other = "En İyi 5"
+
+[toc]
+other = "İçindekiler"
+
+[reading_time]
+other = "Okuma Süresi"
+
+[see_next]
+other = "Sonraki"
+
+[see_previous]
+other = "Önceki"
+
+[result]
+other = "Sonuç"
+
+[directory]
+other = "Çalışma Dizinizi"
+
+[directory_close]
+other = "Çalışma Dizinizi Kapat"
+
+[directory_open]
+other = "Çalışma Dizinizi Aç"
+
+[sidebar_left]
+other = "Sol Kenar Çubuğu"
+
+[sidebar_left_open]
+other = "Sol Kenar Çubuğunu Aç"
+
+[sidebar_left_close]
+other = "Sol Kenar Çubuğunu Kapat"
+
+[sidebar_right]
+other = "Sağ Kenar Çubuğu"
+
+[sidebar_right_open]
+other = "Sağ Kenar Çubuğunu Aç"
+
+[sidebar_right_close]
+other = "Sağ Kenar Çubuğunu Kapat"
+
+[switch_theme]
+other = "Tema Değiştir"
+
+[folder]
+other = "Klasör"
+
+[folder_control]
+other = "Tüm Klasörleri Aç veya Kapat"
+
+[giscus_lang]
+other = "tr"
+
+[error404]
+other = "Hups! Aradığınız sayfa bulunamadı."
+
+[readmore]
+other = "Devamını Oku"
+
+[search]
+other = "Ara..."
+
+[footer_made_with]
+other = "♥️ ile yapıldı"
+
+[footer_all_rights]
+other = "Tüm hakları saklıdır."

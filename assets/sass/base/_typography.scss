@@ -1,0 +1,217 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+/* ============================
+  Base Styles
+============================ */
+html {
+  font-family: v.$font__family;
+}
+
+body {
+  background-color: var(--bg-first);
+  color: var(--text-second);
+  font-size: v.$font__size--3xs;
+  font-weight: 300;
+
+  @include m.transition(background-color, color);
+
+  line-height: 1.6;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  word-wrap: break-word;
+
+  @include m.max(md) {
+   font-size: v.$font__size--xs;
+  }
+}
+
+/* ============================
+  Headings and Text Styles
+============================ */
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 600;
+  color: var(--text-first);
+  margin-block: 1rem;
+  letter-spacing: 0.02em;
+}
+
+:is(b, strong) {
+  font-weight: 700;
+}
+
+h1 {font-size: v.$font__size--5xl;}
+h2 {font-size: v.$font__size--4xl;}
+h3 {font-size: v.$font__size--3xl;}
+h4 {font-size: v.$font__size--2xl;}
+h5 {font-size: v.$font__size--xl;}
+h6 {font-size: v.$font__size--lg;}
+p {font-weight: 400;}
+p + p {margin-top: 1.2em;}
+small {font-size: 80%;}
+
+del {
+  color: var(--text-third);
+  text-decoration: line-through;
+}
+
+/* ============================
+  Horizontal Rules
+============================ */
+hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  height: 1px;
+  background-color: var(--border-first);
+  margin: 1.5rem 0;
+  border: 0;
+}
+
+/* ============================
+  Tables
+============================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+
+  th,
+  td {
+   border: 1px solid var(--border-first);
+   padding: 0.75rem;
+   text-align: left;
+  }
+
+  th {
+   background-color: var(--bg-second);
+   color: var(--text-first);
+   font-weight: 700;
+  }
+
+  tr {
+   font-weight: 400;
+  }
+
+  tr:nth-child(even) {
+   background-color: var(--bg-second);
+  }
+
+  tr:hover {
+   background-color: var(--bg-third);
+  }
+
+  @include m.max(xs) {
+   display: block;
+   overflow-x: auto;
+   white-space: nowrap;
+  }
+}
+
+/* ============================
+  Lists
+============================ */
+ul {
+  &:has(li input[type="checkbox"]) {
+   padding: 0;
+  }
+
+  li {
+   &:has(input[type="checkbox"]) {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+   }
+
+   &:has(input[type="checkbox"]:checked) {
+    color: var(--accent-first);
+   }
+  }
+}
+
+/* ============================
+  Checkboxes
+============================ */
+input[type="checkbox"] {
+  cursor: pointer;
+  appearance: none;
+  background: var(--bg-second);
+  border: 2px solid var(--border-first);
+  border-radius: 50%;
+  position: relative;
+  padding: 1rem;
+
+  &:checked {
+   border-color: var(--accent-first);
+
+   &::before {
+    content: "\F26A";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    font-size: v.$font__size--xl;
+    color: var(--accent-first);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+  }
+}
+
+/* ============================
+  Definition Lists
+============================ */
+dl {
+  margin: 1.5em 0;
+  line-height: 1.6;
+}
+
+dt {
+  font-weight: 600;
+  color: var(--text-third);
+  border-bottom: 1px dashed var(--text-third);
+  padding-bottom: 0.3em;
+}
+
+dd {
+  margin: 0.5em 0 1em 1em;
+  color: var(--text-first);
+  padding-left: 1em;
+  border-left: 3px solid var(--accent-third);
+}
+
+/* ============================
+  Markdown Content
+============================ */
+.markdown {
+  line-height: 1.5;
+
+  a {
+   color: var(--accent-first);
+
+   &:hover {
+    color: var(--accent-second);
+   }
+  }
+
+  ul,
+  ol {
+   margin: 1.5rem 0;
+   padding-left: 2rem;
+
+   li {
+    margin-bottom: 0.5rem;
+
+    &::marker {
+      color: var(--accent-first);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+   }
+  }
+}

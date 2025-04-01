@@ -1,0 +1,89 @@
+[publish]
+other = "Publicar"
+
+[last_modified]
+other = "Última modificação"
+
+[pinned]
+other = "Fixado"
+
+[recent_post]
+other = "Postagem recente"
+
+[related_content]
+other = "Conteúdo relacionado"
+
+[no_related_content]
+other = "Nenhum conteúdo relacionado encontrado"
+
+[top_five]
+other = "Top 5 em"
+
+[toc]
+other = "Índice"
+
+[reading_time]
+other = "Tempo de leitura"
+
+[see_next]
+other = "Ver próximo"
+
+[see_previous]
+other = "Ver anterior"
+
+[result]
+other = "Resultado"
+
+[directory]
+other = "Diretório de trabalho"
+
+[directory_close]
+other = "Fechar diretório de trabalho"
+
+[directory_open]
+other = "Abrir diretório de trabalho"
+
+[sidebar_left]
+other = "Barra lateral esquerda"
+
+[sidebar_left_open]
+other = "Abrir barra lateral esquerda"
+
+[sidebar_left_close]
+other = "Fechar barra lateral esquerda"
+
+[sidebar_right]
+other = "Barra lateral direita"
+
+[sidebar_right_open]
+other = "Abrir barra lateral direita"
+
+[sidebar_right_close]
+other = "Fechar barra lateral direita"
+
+[switch_theme]
+other = "Mudar tema"
+
+[folder]
+other = "Pasta"
+
+[folder_control]
+other = "Abrir ou fechar todas as pastas"
+
+[giscus_lang]
+other = "pt"
+
+[error404]
+other = "Ops! A página que você procura não foi encontrada."
+
+[readmore]
+other = "Leia mais"
+
+[search]
+other = "Pesquisar..."
+
+[footer_made_with]
+other = "Feito com ♥️ usando"
+
+[footer_all_rights]
+other = "Todos os direitos reservados."

@@ -1,0 +1,27 @@
+{{ range (.Paginate .Pages).Pages }}
+  <article class="card" tabindex="0">
+    <header class="card__header">
+      <img 
+        src="{{ .Params.image | default "https://picsum.photos/1090/720" | relURL }}" 
+        alt="{{ .Title }}" 
+        class="card__image"        
+        loading="lazy"
+        >
+    </header>
+    <section class="card__body">
+      <h3 class="card__title">{{ .Title }}</h3>
+      {{ with .Params.description }}
+        <p class="card__description">{{ . }}</p>
+      {{ end }}
+    </section>
+    <footer class="card__footer">
+      <a 
+        href="{{ .RelPermalink }}" 
+        aria-label="{{ $.Title }}" 
+        title="{{ $.Title }}" 
+        class="btn btn--cloud card__btn">
+        {{ i18n "readmore" }}
+      </a>
+    </footer>
+  </article>
+{{ end }}

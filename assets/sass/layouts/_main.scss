@@ -1,0 +1,29 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+.main {
+  padding-inline: 1rem;
+  &__layout {
+
+    &--grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+  }
+}
+
+.hero {
+  h1 {font-size: v.$font__size--8xl!important;}
+  text-align: center;
+  border-bottom: 1px solid var(--border-first);
+}
+.post-meta {
+  display: none;
+  @include m.min(md){
+    @include m.flex-center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+  }
+}

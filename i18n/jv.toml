@@ -1,0 +1,89 @@
+[publish]
+other = "Terbitaké"
+
+[last_modified]
+other = "Pungkasan diowahi"
+
+[pinned]
+other = "Ditempel"
+
+[recent_post]
+other = "Kiriman Anyar"
+
+[related_content]
+other = "Kontèn Gegandhèngan"
+
+[no_related_content]
+other = "Ora ana kontèn gegandhèngan sing ditemokaké"
+
+[top_five]
+other = "5 Paling Dhuwur ing"
+
+[toc]
+other = "Daftar Isi"
+
+[reading_time]
+other = "Wektu Maca"
+
+[see_next]
+other = "Deloken Sabanjuré"
+
+[see_previous]
+other = "Deloken Sakdurungé"
+
+[result]
+other = "Asil"
+
+[directory]
+other = "Direktori Kerja"
+
+[directory_close]
+other = "Tutup Direktori Kerja"
+
+[directory_open]
+other = "Bukak Direktori Kerja"
+
+[sidebar_left]
+other = "Papan Sisi Kiwa"
+
+[sidebar_left_open]
+other = "Bukak Papan Sisi Kiwa"
+
+[sidebar_left_close]
+other = "Tutup Papan Sisi Kiwa"
+
+[sidebar_right]
+other = "Papan Sisi Tengen"
+
+[sidebar_right_open]
+other = "Bukak Papan Sisi Tengen"
+
+[sidebar_right_close]
+other = "Tutup Papan Sisi Tengen"
+
+[switch_theme]
+other = "Ganti Tema"
+
+[folder]
+other = "Pethi"
+
+[folder_control]
+other = "Bukak Utawa Tutup Kabeh Pethi"
+
+[giscus_lang]
+other = "jv"
+
+[error404]
+other = "Ups! Kaca sing kok goleki ora ditemokaké."
+
+[readmore]
+other = "Waca Luwih Akeh"
+
+[search]
+other = "Golek..."
+
+[footer_made_with]
+other = "Digawe nganggo ♥️ nganggo"
+
+[footer_all_rights]
+other = "Kabeh hak dilindhungi."

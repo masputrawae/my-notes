@@ -1,0 +1,89 @@
+[publish]
+other = "Pubblica"
+
+[last_modified]
+other = "Ultima Modifica"
+
+[pinned]
+other = "Pinnato"
+
+[recent_post]
+other = "Post Recenti"
+
+[related_content]
+other = "Contenuti Correlati"
+
+[no_related_content]
+other = "Nessun contenuto correlato trovato"
+
+[top_five]
+other = "Top 5"
+
+[toc]
+other = "Indice"
+
+[reading_time]
+other = "Tempo di Lettura"
+
+[see_next]
+other = "Vedi Successivo"
+
+[see_previous]
+other = "Vedi Precedente"
+
+[result]
+other = "Risultato"
+
+[directory]
+other = "Directory di Lavoro"
+
+[directory_close]
+other = "Chiudi Directory di Lavoro"
+
+[directory_open]
+other = "Apri Directory di Lavoro"
+
+[sidebar_left]
+other = "Barra Laterale Sinistra"
+
+[sidebar_left_open]
+other = "Apri Barra Laterale Sinistra"
+
+[sidebar_left_close]
+other = "Chiudi Barra Laterale Sinistra"
+
+[sidebar_right]
+other = "Barra Laterale Destra"
+
+[sidebar_right_open]
+other = "Apri Barra Laterale Destra"
+
+[sidebar_right_close]
+other = "Chiudi Barra Laterale Destra"
+
+[switch_theme]
+other = "Cambia Tema"
+
+[folder]
+other = "Cartella"
+
+[folder_control]
+other = "Apri o Chiudi Tutte le Cartelle"
+
+[giscus_lang]
+other = "it"
+
+[error404]
+other = "Ops! La pagina che cerchi non è stata trovata."
+
+[readmore]
+other = "Leggi di più"
+
+[search]
+other = "Cerca..."
+
+[footer_made_with]
+other = "Creato con ♥️ con"
+
+[footer_all_rights]
+other = "Tutti i diritti riservati."

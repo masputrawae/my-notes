@@ -1,0 +1,15 @@
+{{ $taxonomy := index .context.Site.Taxonomies .taxonomy }}
+{{ $topItems := $taxonomy.ByCount | first 5 }}
+
+<nav class="navbar navbar--widget">
+  <div class="navbar__label">{{ i18n "top_five" }} {{ .taxonomy | title }}</div>
+  <ul class="nav nav--widget">
+    {{ range $topItems }}
+      <li class="nav__item">
+        <a href="{{ .Page.Permalink }}" class="btn btn--text-xs btn--widget">
+          {{ .Term }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

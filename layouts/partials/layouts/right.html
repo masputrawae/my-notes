@@ -1,0 +1,50 @@
+<aside class="offcanvas offcanvas--responsive offcanvas--right" id="rightOffcanvas" aria-label="{{ i18n "sidebar_right" }}">
+  <header class="offcanvas__header">
+    <form 
+      class="search" 
+      id="search" 
+      onsubmit="handleSearch(event)" 
+      method="get" 
+      id="search" 
+      data-search-url="{{ "search.json" | relURL }}"
+      >
+        <i class="bi bi-search"></i>
+        <input 
+          class="search__input" 
+          type="search" 
+          id="search-input" 
+          name="query" 
+          placeholder="{{ i18n "search" }}" 
+          autocomplete="off" 
+          autocorrect="off" 
+          spellcheck="false" 
+          >
+    </form>
+  
+    <button class="btn btn--icon" data-toggle-offcanvas="rightOffcanvas" title="{{ i18n "sidebar_right_close" }}" aria-label="{{ i18n "sidebar_right_close" }}">
+      <i class="bi bi-x"></i>
+    </button>
+  </header>
+
+  <nav class="navbar navbar--widget" id="resultsPanel" style="display: none;">
+    <div class="navbar__label">{{ i18n "result" }}</div>
+    <ul class="nav nav--widget" id="results"></ul>
+  </nav>
+  {{ if .IsPage }}
+    {{ partial "widget/toc.html" . }}
+    {{ partial "widget/related.html" . }}
+  {{ else }}
+    {{ if site.Params.widget.pinned }}
+      {{ partial "widget/pinned.html" . }}
+    {{ end }}
+    {{ if site.Params.widget.recent_post }}
+      {{ partial "widget/recent-post.html" . }}
+    {{ end }}
+    {{ if site.Params.widget.top_tags }}
+      {{ partial "widget/taxonomy-featured.html" (dict "taxonomy" "tags" "context" .) }}
+    {{ end }}
+    {{ if site.Params.widget.top_categories }}
+      {{ partial "widget/taxonomy-featured.html" (dict "taxonomy" "categories" "context" .) }}  
+    {{ end }}
+  {{ end }}
+</aside>

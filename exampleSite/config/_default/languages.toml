@@ -1,0 +1,133 @@
+# LANGUAGE AND MENU CONFIGURATION
+# ------------------------------
+
+# Language Settings:
+# - Adjust this section for your preferred language
+# - You can add or modify language configurations
+
+# Menu Configuration Guide:
+# You can safely modify:
+#   - "name"    : Displayed menu name
+#   - "pageRef" : Target page for the menu
+#   - "weight"  : Menu display order
+
+# IMPORTANT WARNING FOR "pre" ATTRIBUTE (icons):
+# ---------------------------------------------
+#   1. Strongly advised NOT to modify "pre" values because:
+#       - Icons may not be available in the default icon set
+#       - May cause display issues if icons are missing
+#
+#   2. If you MUST change icons:
+#       a. Verify icon exists at Bootstrap Icons (https://icons.getbootstrap.com/)
+#       b. Add custom CSS in: assets/sass/base/_icon.scss
+#           Example: .bi-new-icon::before { content: "\F123"; }
+#
+#   3. If you don't understand how this works,
+#       DO NOT MODIFY "pre" VALUES!
+
+#=================================================#
+#==================== English ====================#
+[en]
+    title           = "Your Site Name"
+    languageCode    = "en"
+    languageName    = "English"
+    weight          = 1
+    contentDir      = "content/en"
+    rtl             = false
+
+    [en.params]
+        i18nDir             = "i18n"
+        dateFormat          = "Monday, January 2, 2006"
+    [en.params.author]
+        name                = "John Doe"
+        subtitle            = "Write Your Catchy Subtitle Here!"
+
+    #=================================================#
+    #===================== MENUS =====================#
+    [en.menus]
+    [[en.menus.main]]
+        name    = "Home"
+        pageRef = "/"
+        pre     = "<i class='bi bi-house'></i>"
+        weight  = 10
+    [[en.menus.main]]
+        name    = "About"
+        pageRef = "/documents/about"
+        pre     = "<i class='bi bi-person'></i>"
+        weight  = 20
+    [[en.menus.main]]
+        name    = "Projects"
+        pageRef = "/projects"
+        pre     = "<i class='bi bi-folder'></i>"
+        weight  = 30
+    [[en.menus.main]]
+        name    = "Content"
+        pageRef = "/posts"
+        pre     = "<i class='bi bi-journal-text'></i>"
+        weight  = 40
+    [[en.menus.main]]
+        name    = "Categories"
+        pageRef = "/categories"
+        pre     = "<i class='bi bi-grid'></i>"
+        weight  = 50
+    [[en.menus.main]]
+        name    = "Tags"
+        pageRef = "/tags"
+        pre     = "<i class='bi bi-tag'></i>"
+        weight  = 60
+
+#=================================================#
+#=================== INDONESIA ===================#
+[id]
+    title           = "Nama Situs Kamu"
+    languageCode    = "id"
+    languageName    = "Indonesia"
+    weight          = 2
+    contentDir      = "content/id"
+    rtl             = false
+
+    [id.params]
+        i18nDir             = "i18n"
+        dateFormat          = "Senin, 2 Januari 2006"
+    [id.params.author]
+        name                = "John Doe"
+        subtitle            = "Tulis Subjudul Menarik Anda di Sini!"
+
+    #=================================================#
+    #===================== MENUS =====================#
+    [id.menus]
+    [[id.menus.main]]
+        name    = "Beranda"
+        pageRef = "/"
+        pre     = "<i class='bi bi-house'></i>"
+        weight  = 10
+
+    [[id.menus.main]]
+        name    = "Tentang"
+        pageRef = "/documents/about"
+        pre     = "<i class='bi bi-person'></i>"
+        weight  = 20
+
+    [[id.menus.main]]
+        name    = "Proyek"
+        pageRef = "/projects"
+        pre     = "<i class='bi bi-folder'></i>"
+        weight  = 30
+
+    [[id.menus.main]]
+        name    = "Konten"
+        pageRef = "/posts"
+        pre     = "<i class='bi bi-journal-text'></i>"
+        weight  = 40
+
+    [[id.menus.main]]
+        name    = "Kategori"
+        pageRef = "/categories"
+        pre     = "<i class='bi bi-grid'></i>"
+        weight  = 50
+
+    [[id.menus.main]]
+        name    = "Tag"
+        pageRef = "/tags"
+        pre     = "<i class='bi bi-tag'></i>"
+        weight  = 60

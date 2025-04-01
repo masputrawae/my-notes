@@ -1,0 +1,52 @@
+#====================================#
+#========== PARAMS SETTING ==========#
+[author]
+name          = "John Doe"
+subtitle      = "Write Your Catchy Subtitle Here!"
+logo          = "logo/logo.webp"
+twitter       = "@johndoe"
+#====================================#
+#============= GISCUS ===============#
+[giscus]
+    active                   = false
+    data_repo                ="github_user/repo"
+    data_repo_id             ="R_kgDONFahNA"
+    data_category            ="Announcements"
+    data_category_id         ="DIC_kwDONFahNM4CnBHa"
+    data_mapping             ="pathname"
+    data_strict              ="0"
+    data_reactions_enabled   ="1"
+    data_emit_metadata       ="1"
+    data_input_position      ="top"
+
+#====================================#
+#========== WIDGET SETTING ==========#
+[widget]
+    pinned        = true
+    recent_post   = true
+    top_tags      = false
+    top_categories= false
+
+#====================================#
+#=========== SOCIAL LINK ============#
+[social]
+[social.facebook]
+    name = "Facebook"
+    url  = "https://facebook.com/johndoe"
+    icon = "bi-facebook"
+[social.twitter]
+    name = "TwitterX"
+    url  = "https://x.com/johndoe"
+    icon = "bi-twitter-x"
+[social.instagram]
+    name = "Instagram"
+    url  = "https://instagram.com/johndoe"
+    icon = "bi-instagram"
+[social.github]
+    name = "Github"
+    url  = "https://github.com/johndoe"
+    icon = "bi-github"
+[social.discord]
+    name = "Discord"
+    url  = "https://discord.com/users/johndoe"
+    icon = "bi-discord"

@@ -1,0 +1,96 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.navbar {
+  padding: 0.5rem 1rem;
+  
+  &__header, 
+  &__button {
+    @include m.flex-between;
+    gap: 0.75rem;
+  }
+
+  &__label {
+    font-size: v.$font__size--xl;
+    padding-block: 0.5rem;
+    font-weight: 700;
+    color: var(--text-first);
+  }
+
+  &--menu {
+    padding-top: 1rem;
+  }
+
+  &--widget,
+  &--taxonomy {
+    margin-block: 1rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-first);
+    border-radius: 0.25rem;
+  }
+
+  &--taxonomy {
+    padding-block: 0.75rem;
+  }
+
+  &--trems {
+    text-align: center;
+  }
+
+  &--footer {
+    @include m.flex-center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    margin-block: 0.5rem;
+  }
+
+  &--menu {
+    .nav__item {
+      margin-block: 1rem;
+    }
+  }
+
+  &--tree &--tree,
+  &--toc &--toc {
+    padding-left: 1rem;
+    border-left: 1px dashed var(--border-first);
+
+    &:hover {
+      border-color: var(--accent-first);
+    }
+  }
+
+  &--tree {
+
+    &.collapsed {
+      display: none;
+    }
+  }
+  
+  &--row {
+    @include m.flex-center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+  
+  &--breadcrumb {
+    gap: 1rem;
+  }
+
+  &--cloud {
+    gap: 1rem;
+  }
+
+  &--taxonomy {
+    padding-block: 0.75rem;
+  }
+}

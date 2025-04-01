@@ -1,0 +1,1 @@
+# If you are using github pages, you can add .github/workflows/hugo.yml, otherwise ignore this, or just delete it.
