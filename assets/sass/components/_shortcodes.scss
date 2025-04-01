@@ -154,7 +154,8 @@
       border-right-color: $color;
 
       .alert__title,
-      .alert__icon {
+      .alert__icon,
+      .alert__header {
         color: $color;
       }
     }
