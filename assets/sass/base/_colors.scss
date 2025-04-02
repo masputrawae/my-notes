@@ -2,47 +2,47 @@ $colors: (
   //============ DARK =============//
   "dark": (
     "bg": (
-      "first": #0d1117,
-      "second": #161b22,
-      "third": #1f2933,
+      "first": #0a0c12,
+      "second": #12141c,
+      "third": #1a1c24,
     ),
     
     "text": (
-      "white": #e6e6e6,
-      "first": #e1e6ec,
-      "second": #c1c7ce,
-      "third": #6e7681, 
+      "white": #f0f2f5,
+      "first": #e4e6eb,
+      "second": #c8cbd1,
+      "third": #65676b, 
     ),
 
     "accent": (
-      "first": #00d8ff,
-      "second": #0078ff,
-      "third": #9b00ff, 
+      "first": #00f2fe,
+      "second": #4facfe,
+      "third": #a18cd1, 
     ),
 
     "border": (
-      "first": #2d3748,
-      "second": rgba(0, 216, 255, 0.3)
+      "first": #2a2d35,
+      "second": rgba(0, 242, 254, 0.2)
     ),
 
     "shadow": (
-      "sm": 0 1px 4px 0 rgba(0, 0, 0, 0.5),
-      "md": 0 4px 8px -1px rgba(0, 0, 0, 0.6),
-      "lg": 0 10px 25px -5px rgba(0, 0, 0, 0.7),
-      "ac-first": 0 0 12px rgba(0, 216, 255, 0.8),
-      "ac-second": 0 0 12px rgba(0, 120, 255, 0.8), 
-      "ac-third": 0 0 12px rgba(155, 0, 255, 0.8)
+      "sm": 0 1px 4px 0 rgba(0, 0, 0, 0.4),
+      "md": 0 4px 8px -1px rgba(0, 0, 0, 0.5),
+      "lg": 0 10px 25px -5px rgba(0, 0, 0, 0.6),
+      "ac-first": 0 0 10px rgba(0, 242, 254, 0.6),
+      "ac-second": 0 0 10px rgba(79, 172, 254, 0.6), 
+      "ac-third": 0 0 10px rgba(161, 140, 209, 0.6)
     ),
     "code": (
-      "bg": #0d1117,
-      "text": #c9d1d9,
-      "function": #00b4ff,
-      "highlight-bg": #161b22,
+      "bg": #0a0c12,
+      "text": #e4e6eb,
+      "function": #4facfe,
+      "highlight-bg": #12141c,
       "keyword": #ff6b6b,
-      "string": #00eaff,
-      "comment": #6e7681,
-      "number": #d2a8ff,
-      "line-number": #30363d,
+      "string": #00f2fe,
+      "comment": #65676b,
+      "number": #a18cd1,
+      "line-number": #2a2d35,
       "operator": #ffab70,
       "class": #ff8c42,
     ),
@@ -50,49 +50,49 @@ $colors: (
   //============ LIGHT =============//
   "light": (
     "bg": (
-      "first": #f5faff,
-      "second": #eaf4ff,
-      "third": #d6eaff,
+      "first": #f8fafc,
+      "second": #f1f5f9,
+      "third": #e2e8f0,
     ),
 
     "text": (
       "white": #ffffff,
-      "first": #1a202c,
-      "second": #202836,
-      "third": #4a5568,
+      "first": #1e293b,
+      "second": #141a22,
+      "third": #64748b,
     ),
 
     "accent": (
-      "first": #004797,
-      "second": #00b4ff,
-      "third": #9b00ff,
+      "first": #0ea5e9,
+      "second": #3b82f6,
+      "third": #8b5cf6,
     ),
 
     "border": (
-      "first": #cbd5e0,
-      "second": rgba(0, 120, 255, 0.3)
+      "first": #e2e8f0,
+      "second": rgba(14, 165, 233, 0.2)
     ),
 
     "shadow": (
-      "sm": 0 1px 4px 0 rgba(0, 0, 0, 0.1),
-      "md": 0 4px 8px -1px rgba(0, 0, 0, 0.15),
-      "lg": 0 10px 15px -3px rgba(0, 0, 0, 0.2),
-      "ac-first": 0 0 12px rgba(0, 120, 255, 0.5),
-      "ac-second": 0 0 12px rgba(0, 180, 255, 0.5), 
-      "ac-third": 0 0 12px rgba(155, 0, 255, 0.5)
+      "sm": 0 1px 4px 0 rgba(0, 0, 0, 0.05),
+      "md": 0 4px 8px -1px rgba(0, 0, 0, 0.1),
+      "lg": 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      "ac-first": 0 0 9px rgba(14, 165, 233, 0.3),
+      "ac-second": 0 0 9px rgba(59, 130, 246, 0.3), 
+      "ac-third": 0 0 9px rgba(139, 92, 246, 0.3)
     ),
     "code": (
       "bg": #ffffff,
-      "text": #1a202c,
-      "function": #0078ff,
-      "highlight-bg": #f0f4f8,
-      "keyword": #ff6b6b,
-      "string": #0078ff,
-      "comment": #718096,
-      "number": #9b00ff,
-      "line-number": #708299,
-      "operator": #ff6b6b,
-      "class": #ff8c42,
+      "text": #1e293b,
+      "function": #3b82f6,
+      "highlight-bg": #f1f5f9,
+      "keyword": #ef4444,
+      "string": #0ea5e9,
+      "comment": #64748b,
+      "number": #8b5cf6,
+      "line-number": #94a3b8,
+      "operator": #f97316,
+      "class": #f97316,
     ),
   )
 );
