@@ -12,7 +12,7 @@ body {
   background-color: var(--bg-first);
   color: var(--text-second);
   font-size: v.$font__size--3xs;
-  font-weight: 300;
+  font-weight: 400;
 
   @include m.transition(background-color, color);
 
