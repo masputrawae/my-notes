@@ -19,7 +19,8 @@
     </div>
 
   {{ else }}
-    <div class="main__layout">
+    <div class="main__layout main__layout--text-center">
+      <h1>{{ .Title | title }}</h1>
       {{ partial "content/taxonomy-cloud.html" . }}
     </div>
   {{ end }}

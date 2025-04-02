@@ -106,7 +106,7 @@ $colors: (
   padding: 1rem;
   margin: 0.25rem auto;
   border: 5px solid transparent;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: var(--shadow-md);
   font-style: normal;
   @include m.transition(box-shadow, transform);
@@ -116,11 +116,7 @@ $colors: (
     align-items: center;
     gap: 0.75rem;
     font-weight: 700;
-    font-size: v.$font__size--xl;
-  }
-
-  &__title {
-    color: inherit;
+    font-size: v.$font__size--lg;
   }
 
   &__icon {

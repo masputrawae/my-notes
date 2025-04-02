@@ -134,16 +134,15 @@
   &__title {
     color: var(--accent-first);
     font-weight: 700;
-    margin: 0;
     text-shadow: var(--shadow-ac-first);
+    margin-bottom: 0;
   }
 
   &__subtitle {
-    margin-block: 0.5rem;
     font-weight: 500;
+    margin: 0;
     color: var(--text-first);
-    font-size: v.$font__size--sm;
-    font-style: italic;
-    border-bottom: 1px solid var(--border-second);
+    font-size: v.$font__size--2xs;
+    max-width: 230px;
   }
 }

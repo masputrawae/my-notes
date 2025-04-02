@@ -2,6 +2,7 @@
 @use '../abstracts/variables' as v;
 .main {
   padding-inline: 1rem;
+  min-height: 100vh;
   &__layout {
 
     &--grid {
@@ -9,6 +10,10 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
       padding: 1rem 0;
+    }
+
+    &--text-center {
+      text-align: center;
     }
   }
 }
