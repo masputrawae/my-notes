@@ -1,4 +1,4 @@
-{{ with .Params.image | default "https://placehold.co/1080x560" }}
+{{ with .Params.image }}
   <figure class="image image--center">
     <img src="{{ . }}" alt="{{ $.Title }}">
   </figure>
