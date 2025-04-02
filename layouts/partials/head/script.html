@@ -1,11 +1,34 @@
-<script defer>
-  if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-          navigator.serviceWorker.register('{{ "sw.js" | relURL }}').then(reg => {
-              console.log('Service worker registered with scope: ', reg.scope);
-          }, err => {
-              console.log('Service worker registration failed: ', err);
-          });
-      });
-  }
-</script>
+<!-- |===========| START: JAVASCRIPT |===========| -->
+{{- with resources.Get "js/sw.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build | resources.Copy "sw.js" }}
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('{{ .RelPermalink }}').then(reg => {
+                    console.log('Service worker registered with scope: ', reg.scope);
+                }).catch(err => {
+                    console.log('Service worker registration failed: ', err);
+                });
+            });
+        }
+      </script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | resources.Copy "sw.js" }}
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('{{ .RelPermalink }}').then(reg => {
+                    console.log('Service worker registered with scope: ', reg.scope);
+                }).catch(err => {
+                    console.log('Service worker registration failed: ', err);
+                });
+            });
+        }
+      </script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+<!-- |===========| END: JAVASCRIPT |===========| -->
