@@ -1,7 +1,7 @@
 <script defer>
   if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-          navigator.serviceWorker.register('{{ "js/sw.js" | relURL }}').then(reg => {
+          navigator.serviceWorker.register('{{ "sw.js" | relURL }}').then(reg => {
               console.log('Service worker registered with scope: ', reg.scope);
           }, err => {
               console.log('Service worker registration failed: ', err);
