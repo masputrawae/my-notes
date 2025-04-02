@@ -1,5 +1,106 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
+$colors: (
+  //============ DARK =============//
+  "dark": (
+    "alert": (
+      "tip": #00ffcc,
+      "info": #00b4ff,
+      "success": #00ff88,
+      "warning": #ffcc00,
+      "danger": #ff4444,
+      "error": #ff0055,
+      "bug": #ff00ff,
+      "note": #00eaff,
+      "abstract": #9b00ff,
+      "todo": #ff8800,
+      "question": #00ffdd,
+      "failure": #ff3366,
+      "example": #00ffaa,
+      "quote": #ff66cc,
+      "important": #ff0066,
+      "history": #ff9900,
+      "journal": #ff6600,
+      "date": #ffcc66,
+      "book": #9966ff,
+      "search": #66ccff,
+      "person": #ff99cc,
+      "code": #66ff66,
+
+      "facebook": #3b5998,
+      "discord": #7289da,
+      "github": #cdcdcd,
+      "instagram": #e1306c,
+      "linkedin": #0077b5,
+      "youtube": #ff0000,
+      "reddit": #ff4500,
+      "behance": #1769ff,
+      "dribbble": #ea4c89,
+      "medium": #00ab6c,
+      "pinterest": #bd081c,
+      "snapchat": #fffc00,
+      "vimeo": #1ab7ea,
+      "tiktok": #69c9d0,
+      "twitterx": #1da1f2,
+      "whatsapp": #25d366,
+    )
+  ),
+  //============ LIGHT =============//
+  "light": (
+    "alert": (
+      "tip": #007a66,
+      "info": #005f99,
+      "success": #007a4d,
+      "warning": #cc9900,
+      "danger": #cc3333,
+      "error": #cc0044,
+      "bug": #990099,
+      "note": #007a99,
+      "abstract": #660099,
+      "todo": #cc6600,
+      "question": #007a80,
+      "failure": #cc3366,
+      "example": #007a66,
+      "quote": #cc6699,
+      "important": #cc0055,
+
+      "history": #cc7a00,
+      "journal": #cc5200,
+      "date": #cc9966,
+      "book": #7a52cc,
+      "search": #3399cc,
+      "person": #cc6699,
+      "code": #33cc33,
+      "facebook": #2d4373,
+      "discord": #5a73b5,
+      "github": #24292e,
+      "instagram": #bc2a8d,
+      "linkedin": #005582,
+      "youtube": #cc0000,
+      "reddit": #cc3700,
+      "behance": #1458cc,
+      "dribbble": #c03976,
+      "medium": #008a57,
+      "pinterest": #990616,
+      "snapchat": #aaa400,
+      "vimeo": #1489b5,
+      "tiktok": #4da6a8,
+      "twitterx": #1578b5,
+      "whatsapp": #1ba94c,
+    ),
+  )
+);
+
+@each $theme, $categories in $colors {
+  [data-theme="#{$theme}"] {
+    @each $category, $shades in $categories {
+      @each $shade, $value in $shades {
+        --#{$category}-#{$shade}: #{$value};
+      }
+    }
+  }
+}
+
 // ALERT CARD
 .alert {
   padding: 1rem;
@@ -14,7 +115,8 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: red;
+    font-weight: 700;
+    font-size: v.$font__size--xl;
   }
 
   &__title {
@@ -42,6 +144,12 @@
 
   &--default-color {
     border-right-color: var(--accent-first);
+
+    .alert__title,
+    .alert__icon,
+    .alert__header {
+      color: var(--accent-first);
+    }
   }
 
   &--blockquote {
@@ -63,8 +171,31 @@
     failure: var(--alert-failure),
     example: var(--alert-example),
     quote: var(--alert-quote),
-    important: var(--alert-important)
-  ) {
+    important: var(--alert-important),
+    history: var(--alert-history),
+    journal: var(--alert-journal),
+    date: var(--alert-date),
+    book: var(--alert-book),
+    search: var(--alert-search),
+    person: var(--alert-person),
+    code: var(--alert-code),
+    facebook: var(--alert-facebook),
+    discord: var(--alert-discord),
+    github: var(--alert-github),
+    instagram: var(--alert-instagram),
+    linkedin: var(--alert-linkedin),
+    youtube: var(--alert-youtube),
+    reddit: var(--alert-reddit),
+    behance: var(--alert-behance),
+    dribbble: var(--alert-dribbble),
+    "medium": var(--alert-medium),
+    pinterest: var(--alert-pinterest),
+    snapchat: var(--alert-snapchat),
+    vimeo: var(--alert-vimeo),
+    tiktok: var(--alert-tiktok),
+    twitterx: var(--alert-twitterx),
+    whatsapp: var(--alert-whatsapp)
+  ){
     &--#{$type} {
       border-left-color: $color;
       border-right-color: $color;
