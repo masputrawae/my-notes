@@ -45,6 +45,11 @@
   &--folder {
     width: 100%;
     font-size: v.$font__size--sm;
+    background-color: var(--bg-second);
+  }
+
+  &--file {
+    border: none;
   }
 
   // MODIFIER btn--breadcrumb
