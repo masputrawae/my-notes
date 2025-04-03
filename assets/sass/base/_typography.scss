@@ -204,9 +204,11 @@ dd {
 
   a {
    color: var(--accent-first);
+   text-decoration: none;
 
    &:hover {
     color: var(--accent-second);
+    text-decoration: underline;
    }
   }
 
