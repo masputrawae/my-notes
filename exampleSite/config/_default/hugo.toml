@@ -10,6 +10,12 @@ defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = false
 
+[permalinks]
+  posts = "/:sections/:year/:month/:day/:title/"
+  notes = "/:sections/:year/:month/:day/:title/"
+  documents = "/:sections/:year/:month/:day/:title/"
+  projects = "/:sections/:year/:month/:day/:title/"
+  
 [privacy]
   [privacy.googleAnalytics]
     disable = true

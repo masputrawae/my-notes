@@ -189,6 +189,19 @@ dd {
 .markdown {
   line-height: 1.5;
 
+  .heading {
+    &__anchor {
+      opacity: 0;
+      font-size: v.$font__size--6xl;
+    }
+
+    &:hover {
+      .heading__anchor {
+        opacity: 1;
+      }
+    }
+  }
+
   a {
    color: var(--accent-first);
 
