@@ -19,11 +19,32 @@
   </nav>
 </aside>
 
+<aside class="offcanvas offcanvas--global offcanvas--left" id="globalOffcanvas" aria-label="{{ i18n "directory" }}">
+  <header class="offcanvas__header">
+    <h3 class="offcanvas__title">{{ i18n "folder" }}</h3>
+  
+    <div class="offcanvas__button-wrapper">
+      <button class="btn btn--icon" id="toggleCollapseAll" title="{{ i18n "folder_control" }}" aria-label="{{ i18n "folder_control" }}">
+        <i class="bi bi-folder2"></i>
+      </button>
+      <button class="btn btn--icon" data-toggle-offcanvas="globalOffcanvas" title="{{ i18n "directory_close" }}" aria-label="{{ i18n "directory_close" }}">
+        <i class="bi bi-x"></i>
+      </button>
+    </div>
+  </header>
+  
+  <nav class="navbar navbar--tree">
+    <ul class="nav nav--tree">
+      {{- template "tree_view" .Site.Home -}}
+    </ul>
+  </nav>
+</aside>
+
 {{- define "tree_view" -}}
   {{- if .Pages -}}
 
-    <!-- === Iterasi Folder Dulu === -->
-    {{- range .Pages -}}
+    <!-- === Iterasi Folder Dulu (Diurutkan) === -->
+    {{- range (.Pages | sort).ByLinkTitle -}}
       {{- if .IsSection -}}
         <li class="nav__item nav__item--folder" id="{{- .RelPermalink | urlize -}}">
           <button class="btn btn--text-xs btn--folder" data-toggle-tree="{{- .RelPermalink | urlize -}}"><i class="bi bi-folder2"></i><span class="btn--text-ellipsis">{{- .LinkTitle -}}</span></button>
@@ -34,8 +55,8 @@
       {{- end -}}
     {{- end -}}
 
-    <!-- === Iterasi File Setelahnya === -->
-    {{- range .Pages -}}
+    <!-- === Iterasi File Setelahnya (Diurutkan) === -->
+    {{- range (.Pages | sort).ByLinkTitle -}}
       {{- if .IsPage -}}
         {{- if .File.BaseFileName -}}
           <li class="nav__item nav__item--file" id="{{- .RelPermalink | urlize -}}">
