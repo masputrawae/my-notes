@@ -1,7 +1,11 @@
 # Hugo
 /public/
 /resources/_gen/
+/public/
+/exampleSite/resources/_gen/
+/exampleSite/public/
 /assets/jsconfig.json
+.hugo_build.lock
 hugo_stats.json
 
 # Node modules
